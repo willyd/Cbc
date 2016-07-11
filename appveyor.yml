@@ -23,4 +23,7 @@ build_script:
   - C:\msys64\usr\bin\bash -lc "cd $APPVEYOR_BUILD_FOLDER; BuildTools/get.dependencies.sh fetch --no-third-party"
   - C:\msys64\usr\bin\bash -lc "cd $APPVEYOR_BUILD_FOLDER; export PATH=$PATH:$ADD_PATH; BuildTools/get.dependencies.sh build --monolithic --build=x86_64-w64-mingw32 $HOST_ARCH_ARG --test"
 
+ artifacts:
+  - path: %APPVEYOR_BUILD_FOLDER%
+  
 test: off
