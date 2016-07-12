@@ -2905,8 +2905,8 @@ if test x"$CFLAGS" = x; then
               coin_opt_cflags='-MD -O2'
               coin_dbg_cflags='-MDd'
             else
-              coin_opt_cflags='-MT -O2'
-              coin_dbg_cflags='-MTd'
+              coin_opt_cflags='-MD -O2'
+              coin_dbg_cflags='-MDd'
             fi
             coin_add_cflags='-nologo -wd4996 -D_CRT_SECURE_NO_DEPRECATE'
             ;;
@@ -2915,8 +2915,8 @@ if test x"$CFLAGS" = x; then
               coin_opt_cflags='-MD -Ox'
               coin_dbg_cflags='-MDd -debug'
             else
-              coin_opt_cflags='-MT -Ox'
-              coin_dbg_cflags='-MTd -debug'
+              coin_opt_cflags='-MD -Ox'
+              coin_dbg_cflags='-MDd -debug'
             fi
             coin_add_cflags='-nologo -D_CRT_SECURE_NO_DEPRECATE'
             ;;
@@ -3778,8 +3778,8 @@ if test x"$CXXFLAGS" = x; then
                coin_opt_cxxflags='-MD -O2'
                coin_dbg_cxxflags='-MDd'
             else
-               coin_opt_cxxflags='-MT -O2'
-               coin_dbg_cxxflags='-MTd'
+               coin_opt_cxxflags='-MD -O2'
+               coin_dbg_cxxflags='-MDd'
             fi
             coin_add_cxxflags='-nologo -EHsc -GR -wd4996 -D_CRT_SECURE_NO_DEPRECATE'
             ;;
@@ -3789,8 +3789,8 @@ if test x"$CXXFLAGS" = x; then
               coin_opt_cxxflags='-MD -Ox'
               coin_dbg_cxxflags='-MDd -debug'
             else
-              coin_opt_cxxflags='-MT -Ox'
-              coin_dbg_cxxflags='-MTd -debug'
+              coin_opt_cxxflags='-MD -Ox'
+              coin_dbg_cxxflags='-MDd -debug'
             fi
             coin_add_cxxflags='-nologo -EHsc -GR -D_CRT_SECURE_NO_DEPRECATE'
             ;;
